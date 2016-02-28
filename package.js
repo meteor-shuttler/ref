@@ -1,6 +1,6 @@
 Package.describe({
   name: 'shuttle:ref',
-  version: '0.0.0',
+  version: '0.0.1',
   summary: 'Adds `Ref` helper to all documents in all collections.',
   git: 'https://github.com/meteor-shuttle/ref',
   documentation: 'README.md'
