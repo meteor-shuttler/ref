@@ -1,16 +1,16 @@
 // (ref?: Object) => Document|undefined
-Shuttle.Ref = function(ref) {
-	return Shuttle.isRef(ref)?Mongo.Collection.get(ref.collection).findOne(ref.id):undefined;
+Shuttler.Ref = function(ref) {
+	return Shuttler.isRef(ref)?Mongo.Collection.get(ref.collection).findOne(ref.id):undefined;
 };
 
 // (ref?: Object) => Document|undefined
-Shuttle.Ref.soft = function(ref) {
-	var result = Shuttle.Ref(ref);
+Shuttler.Ref.soft = function(ref) {
+	var result = Shuttler.Ref(ref);
 	return result?result:(typeof(ref) == 'object' && '_id' in ref?ref:undefined);
 }
 
 // (ref?: Object|String, prefix?: String) => { id: String, collection?: String }
-Shuttle.Ref.new = function(ref, prefix) {
+Shuttler.Ref.new = function(ref, prefix) {
 	var _prefix = (prefix?prefix+'.':'');
 	if (typeof(ref) == 'object') {
 		if (typeof(ref.id) == 'string') {

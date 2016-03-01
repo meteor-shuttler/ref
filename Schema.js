@@ -1,4 +1,4 @@
-Shuttle.Ref.Schema = new SimpleSchema({
+Shuttler.Ref.Schema = new SimpleSchema({
 	collection: {
 		type: String
 	},

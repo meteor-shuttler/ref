@@ -4,6 +4,10 @@ References between collections.
 
 ## Example
 
+```
+meteor add shuttler:ref
+```
+
 ```js
 var b = new Mongo.Collection('a');
 b.insert({ _id: 'c' });

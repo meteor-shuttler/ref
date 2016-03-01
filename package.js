@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'shuttle:ref',
-  version: '0.0.1',
+  name: 'shuttler:ref',
+  version: '0.0.2',
   summary: 'Adds `Ref` helper to all documents in all collections.',
-  git: 'https://github.com/meteor-shuttle/ref',
+  git: 'https://github.com/meteor-shuttler/ref',
   documentation: 'README.md'
 });
 
@@ -16,12 +16,12 @@ Package.onUse(function(api) {
   api.use('dburles:mongo-collection-instances@0.3.4');
   api.use('dburles:collection-helpers@1.0.4');
   api.use('lai:collection-extensions@0.2.1');
-  api.use('shuttle:namespace@0.0.0');
+  api.use('shuttler:namespace@0.0.0');
   
   api.addFiles('helper.js');
   api.addFiles('isRef.js');
   api.addFiles('Ref.js');
   api.addFiles('Schema.js');
   
-  api.export('Shuttle');
+  api.export('Shuttler');
 });
