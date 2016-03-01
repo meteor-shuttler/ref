@@ -1,6 +1,6 @@
 Package.describe({
   name: 'shuttler:ref',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'Adds `Ref` helper to all documents in all collections.',
   git: 'https://github.com/meteor-shuttler/ref',
   documentation: 'README.md'
