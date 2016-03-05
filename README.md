@@ -2,11 +2,13 @@
 
 References between collections.
 
-## Example
+## Install
 
 ```
 meteor add shuttler:ref
 ```
+
+## Example
 
 ```js
 var b = new Mongo.Collection('a');
