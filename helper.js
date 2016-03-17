@@ -5,7 +5,7 @@ CollectionExtensions.addExtension(function(name, options) {
 			var _prefix = (prefix?prefix+'.':'')
 			return {
 				[_prefix+'id']: this._id,
-				[_prefix+'collection']: Collection._name
+				[_prefix+'collection']: Collection._ref
 			};
 		}
 	});

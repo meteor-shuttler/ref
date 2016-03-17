@@ -65,6 +65,9 @@ Ready scheme for use with packages [SimpleSchema](https://github.com/aldeed/mete
 
 ## Versions
 
+### 0.0.5
+* Remove dependecie from `dburles:mongo-collection-instances`
+
 ### 0.0.1
 * `Shuttler.Ref.new`
 * `collection` field is optional

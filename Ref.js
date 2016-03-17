@@ -1,6 +1,6 @@
 // (ref?: Object) => Document|undefined
 Shuttler.Ref = function(ref) {
-	return Shuttler.isRef(ref)?Mongo.Collection.get(ref.collection).findOne(ref.id):undefined;
+	return Shuttler.isRef(ref)?Shuttler.collection(ref.collection).findOne(ref.id):undefined;
 };
 
 // (ref?: Object) => Document|undefined

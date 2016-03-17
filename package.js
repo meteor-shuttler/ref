@@ -1,6 +1,6 @@
 Package.describe({
   name: 'shuttler:ref',
-  version: '0.0.4',
+  version: '0.0.5',
   summary: 'Adds `Ref` helper to all documents in all collections.',
   git: 'https://github.com/meteor-shuttler/ref',
   documentation: 'README.md'
@@ -13,10 +13,10 @@ Package.onUse(function(api) {
   api.use('ecmascript');
   
   api.use('aldeed:simple-schema@1.5.1');
-  api.use('dburles:mongo-collection-instances@0.3.4');
   api.use('dburles:collection-helpers@1.0.4');
   api.use('lai:collection-extensions@0.2.1');
   api.use('shuttler:namespace@0.0.0');
+  api.use('shuttler:collection@0.0.4');
   
   api.addFiles('helper.js');
   api.addFiles('isRef.js');
