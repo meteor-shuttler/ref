@@ -1,3 +1,5 @@
-Shuttler.isRef = function(ref) {
-	return typeof(ref) == 'object' && typeof(ref.id) == 'string' && (!('collection' in ref) || typeof(ref.collection) == 'string');
+Shuttler.isRef = function (ref) {
+	const validationContext = Shuttler.Ref.Schema.newContext()
+	validationContext.validate(ref)
+	return validationContext.isValid()
 };
